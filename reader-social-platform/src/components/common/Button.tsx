@@ -6,7 +6,7 @@
 
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import { Button as MuiButton, styled, ButtonProps as MuiButtonProps } from '@mui/material';
+import { Button as MuiButton, styled } from '@mui/material';
 
 const StyledButton = styled(MuiButton)(({ theme }) => ({
   textTransform: 'none',
@@ -18,12 +18,9 @@ const StyledButton = styled(MuiButton)(({ theme }) => ({
   },
 }));
 
-type CustomVariant = 'primary' | 'secondary';
-type MuiVariant = 'contained' | 'outlined' | 'text';
-
-interface ButtonProps extends Omit<MuiButtonProps, 'variant'> {
+interface ButtonProps {
   children: React.ReactNode;
-  variant?: CustomVariant;
+  variant?: 'primary' | 'secondary';
   size?: 'small' | 'medium' | 'large';
   href?: string;
   onClick?: () => void;
@@ -43,17 +40,14 @@ export const Button: React.FC<ButtonProps> = ({
   sx,
   ...props
 }) => {
-  const getMuiVariant = (customVariant: CustomVariant): MuiVariant => 
-    customVariant === 'primary' ? 'contained' : 'outlined';
-
   const buttonProps = {
-    ...props,
-    variant: getMuiVariant(variant),
+    variant: variant === 'primary' ? 'contained' : 'outlined',
     size,
     onClick,
     disabled,
     type,
     sx,
+    ...props
   };
 
   if (href) {

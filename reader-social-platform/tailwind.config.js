@@ -1,20 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/**/*.{js,jsx,ts,tsx}',
-    './public/index.html',
-  ],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: false,
   theme: {
     extend: {
       colors: {
-        primary: '#1976d2',
-        secondary: '#9c27b0',
-        background: '#f5f5f5',
-        text: '#333',
-        error: '#d32f2f',
-        success: '#2e7d32',
+        primary: 'var(--primary-color)',
+        secondary: 'var(--secondary-color)',
+        background: 'var(--background-color)',
+        text: 'var(--text-color)',
+        error: 'var(--error-color)',
+        success: 'var(--success-color)',
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        serif: ['Merriweather', 'Georgia', 'serif'],
       },
     },
+  },
+  variants: {
+    extend: {},
   },
   plugins: [],
 } 
