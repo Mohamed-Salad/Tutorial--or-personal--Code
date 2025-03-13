@@ -1,0 +1,28 @@
+Write a literature review on [creating a social platform dedicated to book/literarture enjoyers of all mediums to come and chat 1-1 with other readers or by creating/joing a book club (basically discord+ goodreads mesh of a front end web app)] that meets graduate (or one that one alines with BSC computer science guidelines) level academic standards and adheres to the Harvard referencing style. The review should critically analyze and synthesize academic sources rather than simply summarizing them, and it should be well-structured with a clear introduction, body, and conclusion. it has to be 1000 words max
+
+As you write the literature review, include inline annotations as comment lines (using symbols like '//' or '#' depending on the preferred format) that provide teaching points and explain:
+
+- The purpose of each section and paragraph.
+- Best practices for integrating and critically analyzing sources.
+- Common pitfalls to avoid (e.g., over-reliance on summaries, lack of critical insight, poor citation practices).
+- Tips on maintaining academic tone, clear structure, and logical flow.
+- How to effectively identify gaps in the literature and suggest areas for further research.
+
+Additionally, incorporate a section at the end of the document titled "Harvard Referencing Check" that outlines key guidelines of the Harvard referencing style used in this document. This section should include:
+
+- The in-text citation format (e.g., (Author, Year)), including rules for multiple authors and direct quotations.
+- The format for the reference list (e.g., ordering by author’s last name, including all necessary details such as publication year, title, publisher/journal, volume, issue, and page numbers).
+- Specific guidelines for different source types (books, journal articles, websites, etc.) as applied in the review.
+
+Example structure:
+
+1. **Introduction**
+   // Comment: Introduce the topic, state the research question, and outline the review's scope.
+2. **Body/Analysis**
+   // Comment: Critically analyze key studies, evaluate methodologies, compare findings, and highlight areas of consensus and disagreement.
+3. **Conclusion**
+   // Comment: Summarize the main findings, highlight gaps in the literature, and suggest directions for future research.
+4. **Harvard Referencing Check**
+   // Comment: Provide a summary of Harvard referencing rules as applied in this document for easy cross-checking.
+
+Ensure that all annotations are clearly marked and easily removable, so they do not interfere with the final text. Also, verify that every citation and reference conforms to Harvard style guidelines as detailed in your final "Harvard Referencing Check" section.
